@@ -9,7 +9,7 @@ let gameState = {
     ballY: 50,
     gameActive: true,
     matchDuration: 90, // minutes
-    currentPlayer: 'p9', // Starting with home striker
+    currentPlayer: 'p11', // Starting with home striker
     events: []
 };
 
@@ -183,8 +183,8 @@ function defendPlay() {
 
 function switchPlayer(team) {
     const playerIds = team === 'home' 
-        ? ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9']
-        : ['p10', 'p11', 'p12', 'p13', 'p14', 'p15', 'p16', 'p17', 'p18'];
+        ? ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11']
+        : ['p12', 'p13', 'p14', 'p15', 'p16', 'p17', 'p18', 'p19', 'p20', 'p21', 'p22'];
     
     gameState.currentPlayer = playerIds[Math.floor(Math.random() * playerIds.length)];
 }
@@ -310,7 +310,7 @@ function restartGame() {
         ballY: 50,
         gameActive: true,
         matchDuration: 90,
-        currentPlayer: 'p9',
+        currentPlayer: 'p11',
         events: []
     };
 
